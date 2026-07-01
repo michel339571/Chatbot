@@ -37,7 +37,7 @@ void Conversation(SqlConnection connexion){
 		Console.WriteLine($"Bot: Votre code de commande est : {code}");
 		Console.WriteLine("Bot: Présentez ce code au restaurant pour récupérer votre commande");
 	}
-	else if(reponse.Contains("renseign")){
+	else if(reponse.Contains("renseigner")){
 		Console.WriteLine("Bien sur, Posez toutes vos questions.");
 
 	}
