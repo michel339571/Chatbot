@@ -11,6 +11,11 @@ catch(Exception ex){
 	Console.WriteLine("Erreur");
 }
 void Conversation(SqlConnection connexion){
+	if(!EstOuvert(connexion)){
+		Console.WriteLine("Bot: Désolé, nous sommes actuellement fermés.");
+		Console.WriteLine("Bot: Consultez nos heures d'ouverture et revenez nous voir !");
+		return;
+	}
 	Console.WriteLine("Bot: Bonjour ! Voulez-vous vous renseigner ou passer une commande??");
 	Console.Write("Vous: ");
 	string reponse = Console.ReadLine()?.ToLower() ?? "";
@@ -82,4 +87,26 @@ string EnregistrerCommande(SqlConnection connexion, string nom, string prenom, s
 	string code = "CMD-" + DateTime.Now.Year + "-" + idClient + "" + idProduit;
 	return code;
 
+}
+bool EstOuvert(SqlConnection connexion){
+	DateTime maintenant = DateTime.Now;
+	string jourActuel = maintenant.ToString("dddd");
+	TimeSpan heureActuelle = maintenant.TimeOfDay;
+	string requeteFerie = "SELECT COUNT(*) FROM JoursFerie WHERE DateFerie= @date";
+	using SqlCommand cmd = new SqlCommand(requeteFerie, connexion);
+	cmd.Parameters.AddWithValue("@date", maintenant.Date);
+	int estFerie = (int)cmd.ExecuteScalar();
+	if (estFerie > 0) return false;
+	string requeteHoraire = "SELECT HeureOuverTure, HeureFermeture, EstFerme FROM Horaires WHERE JourSemaine =@jour";
+	using SqlCommand cmd2 = new SqlCommand(requeteHoraire, connexion);
+	cmd2.Parameters.AddWithValue("@jour", jourActuel);
+	using SqlDataReader reader = cmd2.ExecuteReader();
+	if(reader.Read()){
+		bool estFerme = reader.GetBoolean(2);
+		if (estFerme) return false;
+		TimeSpan ouverture = reader.GetTimeSpan(0);
+		TimeSpan fermeture = reader.GetTimeSpan(1);
+		return heureActuelle >= ouverture && heureActuelle <= fermeture;
+	}
+	return false;
 }
