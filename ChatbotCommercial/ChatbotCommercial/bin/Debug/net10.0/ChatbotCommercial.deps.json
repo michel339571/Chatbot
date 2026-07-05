@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v10.0": {
       "ChatbotCommercial/1.0.0": {
         "dependencies": {
-          "Microsoft.Data.SqlClient": "7.0.1"
+          "Microsoft.Data.SqlClient": "7.0.1",
+          "Telegram.Bot": "22.10.1"
         },
         "runtime": {
           "ChatbotCommercial.dll": {}
@@ -342,6 +343,17 @@
             "fileVersion": "9.0.1326.6317"
           }
         }
+      },
+      "Telegram.Bot/22.10.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "9.0.13"
+        },
+        "runtime": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "assemblyVersion": "22.10.1.0",
+            "fileVersion": "22.10.1.0"
+          }
+        }
       }
     }
   },
@@ -511,6 +523,13 @@
       "sha512": "sha512-t8S9IDpjJKsLpLkeBdW8cWtcPyYqrGu93Dej1RO6WwuL/lkFSqWlan3rMJfortqz1mRIh+sys2AFsSA6jWJ3Jg==",
       "path": "system.security.cryptography.protecteddata/9.0.13",
       "hashPath": "system.security.cryptography.protecteddata.9.0.13.nupkg.sha512"
+    },
+    "Telegram.Bot/22.10.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EIfHoTGub0/FsSmppEIxdkTJGv0QUFscuiHqPq9SdJPoPbkmc7Dpi35oFrVXBvV26OKNipmX8UkQGWgnnb7YtA==",
+      "path": "telegram.bot/22.10.1",
+      "hashPath": "telegram.bot.22.10.1.nupkg.sha512"
     }
   }
 }

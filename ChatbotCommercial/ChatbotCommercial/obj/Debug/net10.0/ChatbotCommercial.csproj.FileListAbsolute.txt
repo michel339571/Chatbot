@@ -58,3 +58,4 @@ C:\Users\Michel TCHINIANGA\OneDrive\Desktop\ChatbotCommercial\ChatbotCommercial\
 C:\Users\Michel TCHINIANGA\OneDrive\Desktop\ChatbotCommercial\ChatbotCommercial\ChatbotCommercial\obj\Debug\net10.0\ChatbotCommercial.genruntimeconfig.cache
 C:\Users\Michel TCHINIANGA\OneDrive\Desktop\ChatbotCommercial\ChatbotCommercial\ChatbotCommercial\obj\Debug\net10.0\ref\ChatbotCommercial.dll
 C:\Users\Michel TCHINIANGA\OneDrive\Desktop\ChatbotCommercial\ChatbotCommercial\ChatbotCommercial\obj\Debug\net10.0\ChatbotCommercial.sourcelink.json
+C:\Users\Michel TCHINIANGA\OneDrive\Desktop\ChatbotCommercial\ChatbotCommercial\ChatbotCommercial\bin\Debug\net10.0\Telegram.Bot.dll

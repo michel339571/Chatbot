@@ -224,7 +224,7 @@
           "Microsoft.Extensions.Primitives": "9.0.13"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.Extensions.Options.dll": {
             "related": ".xml"
           }
         },
@@ -240,7 +240,7 @@
       "Microsoft.Extensions.Primitives/9.0.13": {
         "type": "package",
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
             "related": ".xml"
           }
         },
@@ -460,6 +460,22 @@
         },
         "build": {
           "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Telegram.Bot/22.10.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Telegram.Bot.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       }
     }
@@ -1172,11 +1188,31 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Telegram.Bot/22.10.1": {
+      "sha512": "EIfHoTGub0/FsSmppEIxdkTJGv0QUFscuiHqPq9SdJPoPbkmc7Dpi35oFrVXBvV26OKNipmX8UkQGWgnnb7YtA==",
+      "type": "package",
+      "path": "telegram.bot/22.10.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Telegram.Bot.dll",
+        "lib/net6.0/Telegram.Bot.pdb",
+        "lib/net6.0/Telegram.Bot.xml",
+        "lib/netstandard2.0/Telegram.Bot.dll",
+        "lib/netstandard2.0/Telegram.Bot.pdb",
+        "lib/netstandard2.0/Telegram.Bot.xml",
+        "package-icon.png",
+        "telegram.bot.22.10.1.nupkg.sha512",
+        "telegram.bot.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
-      "Microsoft.Data.SqlClient >= 7.0.1"
+      "Microsoft.Data.SqlClient >= 7.0.1",
+      "Telegram.Bot >= 22.10.1"
     ]
   },
   "packageFolders": {
@@ -1229,6 +1265,10 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[7.0.1, )"
+          },
+          "Telegram.Bot": {
+            "target": "Package",
+            "version": "[22.10.1, )"
           }
         },
         "imports": [

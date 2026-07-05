@@ -51,6 +51,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Telegram.Bot": {
+              "target": "Package",
+              "version": "[22.10.1, )"
             }
           },
           "imports": [

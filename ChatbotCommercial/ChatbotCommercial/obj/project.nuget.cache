@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s7jmyIHN+aw=",
+  "dgSpecHash": "MgL6SnJ1EJM=",
   "success": true,
   "projectFilePath": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,8 @@
     "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.13\\system.diagnostics.eventlog.9.0.13.nupkg.sha512",
     "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.16.0\\system.identitymodel.tokens.jwt.8.16.0.nupkg.sha512",
     "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\system.security.cryptography.pkcs\\9.0.13\\system.security.cryptography.pkcs.9.0.13.nupkg.sha512",
-    "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.13\\system.security.cryptography.protecteddata.9.0.13.nupkg.sha512"
+    "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.13\\system.security.cryptography.protecteddata.9.0.13.nupkg.sha512",
+    "C:\\Users\\Michel TCHINIANGA\\.nuget\\packages\\telegram.bot\\22.10.1\\telegram.bot.22.10.1.nupkg.sha512"
   ],
   "logs": []
 }
