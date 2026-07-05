@@ -42,8 +42,9 @@ void Conversation(SqlConnection connexion){
 		Console.WriteLine($"Bot: Votre code de commande est : {code}");
 		Console.WriteLine("Bot: Présentez ce code au restaurant pour récupérer votre commande");
 	}
-	else if(reponse.Contains("renseigner")){
-		Console.WriteLine("Bien sur, Posez toutes vos questions.");
+	else if(reponse.Contains("renseigner") || reponse.Contains("info") || reponse.Contains("question")){
+		Console.WriteLine("\n Bot: Voici toutes les informations du restaurant :\n");
+		AfficherInfosRestaurant(connexion);
 
 	}
 	else{
@@ -109,4 +110,44 @@ bool EstOuvert(SqlConnection connexion){
 		return heureActuelle >= ouverture && heureActuelle <= fermeture;
 	}
 	return false;
+}
+void AfficherInfosRestaurant(SqlConnection connexion){
+	string requete = "SELECT TOP 1 Nom, Adress, Telephone, Email, Livraison, ModePaiement FROM Restaurant";
+	using SqlCommand cmd = new SqlCommand(requete, connexion);
+	using SqlDataReader reader = cmd.ExecuteReader();
+	if(reader.Read()){
+		string nom = reader.GetString(0);
+		string adress = reader.GetString(1);
+		string telephone = reader.GetString(2);
+		string email = reader.GetString(3);
+		bool livraison = reader.GetBoolean(4);
+		string paiement = reader.GetString(5);
+
+		Console.WriteLine($"\n Restaurant: {nom}");
+		Console.WriteLine($"\n Adresse: {adress}");
+		Console.WriteLine($"\n Téléphone: {telephone}");
+		Console.WriteLine($"\n Email: {email}");
+		Console.WriteLine($"\n Livraison: {(livraison? "Oui": "Non")} ");
+		Console.WriteLine($"\n Paiement: {paiement}");
+		Console.WriteLine($"\n Horaires d'ouverture : ");
+		reader.Close();
+		string requeteHoraires = "SELECT JourSemaine, HeureOuverture, HeureFermeture, EstFerme FROM Horaires";
+		using SqlCommand cmd2 = new SqlCommand(requeteHoraires, connexion);
+		using SqlDataReader reader2 = cmd2.ExecuteReader();
+		while(reader2.Read()){
+			string jour = reader2.GetString(0);
+			bool ferme = reader2.GetBoolean(3);
+			if (ferme)
+				Console.WriteLine($" {jour}: Fermé");
+			else{
+				TimeSpan ouverture = reader2.GetTimeSpan(1);
+				TimeSpan fermeture = reader2.GetTimeSpan(2);
+				Console.WriteLine($" {jour}: {ouverture:hh\\:mm} - {fermeture:hh\\:mm}");
+
+			}
+		}
+	}
+	else{
+		Console.WriteLine("Bot: Informations du restaurant non disponibles");
+	}
 }
