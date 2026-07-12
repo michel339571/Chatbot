@@ -67,24 +67,7 @@ namespace ChatbotCommercial
 			string cheminFichier = $"rapport_{DateTime.Now:yyyy-MM-dd_HH}.xlsx";
 			File.WriteAllBytes(cheminFichier, package.GetAsByteArray());
 
-			// Envoyer au patron si son ID est configuré
-			if (configuration.ChatIdPatron != 0)
-			{
-				int surPlace = commandes.Count(c => c.type == "sur_place");
-				int livraison = commandes.Count(c => c.type == "livraison");
-
-				// Envoyer le résumé texte
-				await bot.SendMessage(configuration.ChatIdPatron,
-					$"📊 Rapport horaire ({debut:HH:mm} - {fin:HH:mm})\n" +
-					$"Total commandes : {commandes.Count}\n" +
-					$"🏠 Sur place : {surPlace}\n" +
-					$"🛵 Livraison : {livraison}");
-
-				// Envoyer le fichier Excel
-				using var stream = File.OpenRead(cheminFichier);
-				await bot.SendDocument(configuration.ChatIdPatron,
-					new InputFileStream(stream, cheminFichier));
-			}
+			
 		}
 	}
 }

@@ -12,8 +12,8 @@ Console.WriteLine("📱 Écris à @AngelMichaelBot sur Telegram !");
 
 
 botClient.StartReceiving(
-	BotService.HandleUpdateAsync,
-	BotService.HandleErrorAsync,
+	ServiceBot.HandleUpdateAsync,
+	ServiceBot.HandleErrorAsync,
 	new ReceiverOptions { AllowedUpdates = Array.Empty<UpdateType>() }
 );
 
