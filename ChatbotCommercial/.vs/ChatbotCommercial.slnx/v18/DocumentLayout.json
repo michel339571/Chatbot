@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|c:\\users\\michel tchinianga\\onedrive\\desktop\\chatbotcommercial\\chatbotcommercial\\chatbotcommercial\\servicedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|solutionrelative:chatbotcommercial\\servicedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|c:\\users\\michel tchinianga\\onedrive\\desktop\\chatbotcommercial\\chatbotcommercial\\chatbotcommercial\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|solutionrelative:chatbotcommercial\\rapport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|c:\\users\\michel tchinianga\\onedrive\\desktop\\chatbotcommercial\\chatbotcommercial\\chatbotcommercial\\servicebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|solutionrelative:chatbotcommercial\\servicebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|c:\\users\\michel tchinianga\\onedrive\\desktop\\chatbotcommercial\\chatbotcommercial\\chatbotcommercial\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|solutionrelative:chatbotcommercial\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|c:\\users\\michel tchinianga\\onedrive\\desktop\\chatbotcommercial\\chatbotcommercial\\chatbotcommercial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0CCA4D1-5043-59BE-6ADD-A5DBF8A1D73E}|ChatbotCommercial\\ChatbotCommercial.csproj|solutionrelative:chatbotcommercial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,17 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\configuration.cs",
+              "RelativeDocumentMoniker": "ChatbotCommercial\\configuration.cs",
+              "ToolTip": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\configuration.cs",
+              "RelativeToolTip": "ChatbotCommercial\\configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T13:52:57.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceBot.cs",
+              "DocumentMoniker": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\ServiceBot.cs",
+              "RelativeDocumentMoniker": "ChatbotCommercial\\ServiceBot.cs",
+              "ToolTip": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\ServiceBot.cs",
+              "RelativeToolTip": "ChatbotCommercial\\ServiceBot.cs",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAwwIIAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T14:09:22.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rapport.cs",
+              "DocumentMoniker": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\Rapport.cs",
+              "RelativeDocumentMoniker": "ChatbotCommercial\\Rapport.cs",
+              "ToolTip": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\Rapport.cs",
+              "RelativeToolTip": "ChatbotCommercial\\Rapport.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T14:07:40.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ServiceData.cs",
+              "DocumentMoniker": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\ServiceData.cs",
+              "RelativeDocumentMoniker": "ChatbotCommercial\\ServiceData.cs",
+              "ToolTip": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\ServiceData.cs",
+              "RelativeToolTip": "ChatbotCommercial\\ServiceData.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAswLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-12T13:59:03.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\Program.cs",
               "RelativeDocumentMoniker": "ChatbotCommercial\\Program.cs",
               "ToolTip": "C:\\Users\\Michel TCHINIANGA\\OneDrive\\Desktop\\ChatbotCommercial\\ChatbotCommercial\\ChatbotCommercial\\Program.cs",
               "RelativeToolTip": "ChatbotCommercial\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-21T12:28:49.706Z",
               "EditorCaption": ""
